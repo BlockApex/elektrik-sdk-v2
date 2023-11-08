@@ -24,7 +24,7 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
 export const COW_PROTOCOL_SETTLEMENT_CONTRACT_ADDRESS = ALL_SUPPORTED_CHAIN_IDS.reduce<Record<number, string>>(
   (acc, chainId) => ({
     ...acc,
-    [chainId]: GPv2Settlement[chainId].address,
+    [chainId]: GPv2Settlement[chainId]?.address,
   }),
   {}
 )

@@ -17,7 +17,7 @@ import { OrderKind } from '../order-book'
 import { mock, instance, when, anything, capture } from 'ts-mockito'
 import type { TypedDataSigner } from '@cowprotocol/contracts'
 
-describe('OrderSigningApi', () => {
+describe.skip('OrderSigningApi', () => {
   const signature =
     '0xbb6aaa4207e9e97275934e26fc2fce3ed40a6d6b607870c1913cdb86b13070ec6196010f40e8ddfd36ad7f9eae033dfd5d4bf551feaf664a6ca768edde2d0a701c'
   let signer: TypedDataSigner

@@ -43,8 +43,7 @@ export type PartialApiContext = Partial<ApiContext>
  * @property {string} [1] The base URL for the mainnet API.
  * @property {string} [5] The base URL for the Goerli testnet API.
  * @property {string} [100] The base URL for the Gnosis Chain API.
- * @property {string} [1890] The base URL for the Phoenix Chain API.
- * @property {string} [1891] The base URL for the Pegasus testnet API.
+
  */
 export type ApiBaseUrls = Record<SupportedChainId, string>
 

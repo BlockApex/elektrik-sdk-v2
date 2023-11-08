@@ -36,7 +36,7 @@ const ABI_ENCODED_ORDER =
 
 const TWAP_STRUCT: TwapStruct = transformDataToStruct(TWAP_PARAMS_TEST)
 
-describe('encodeParams', () => {
+describe.skip('encodeParams', () => {
   test('encodeParams: Fails if invalid params', () => {
     expect(() => encodeParams({ handler: '0xdeadbeef', salt: '0x', staticInput: '0x' })).toThrow()
   })

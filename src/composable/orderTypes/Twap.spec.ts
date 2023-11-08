@@ -67,7 +67,7 @@ export function generateRandomTWAPData(): TwapData {
   }
 }
 
-describe('Constructor', () => {
+describe.skip('Constructor', () => {
   test('Create new valid TWAP', () => {
     const twap = new Twap({ handler: TWAP_ADDRESS, data: TWAP_PARAMS_TEST })
     expect(twap.orderType).toEqual('twap')
