@@ -7,6 +7,8 @@ import { ApiContext, CowEnv, DEFAULT_COW_API_CONTEXT, ApiBaseUrls, PartialApiCon
 import { SupportedChainId } from '../common/chains'
 
 const SUBGRAPH_BASE_URL = 'https://api.thegraph.com/subgraphs/name/cowprotocol'
+const PHOENIX_SUBGRAPH_BASE_URL = "https://subgraph.elektriktest.net/subgraphs/name/ELEKTRIK-GRAPH"
+const PEGASUS_SUBGRAPH_BASE_URL = "https://subgraph.elektrik.network/subgraphs/name/ELEKTRIK-GRAPH"
 
 /**
  * CoW Protocol Production Subgraph API configuration.
@@ -18,6 +20,9 @@ export const SUBGRAPH_PROD_CONFIG: ApiBaseUrls = {
   [SupportedChainId.MAINNET]: SUBGRAPH_BASE_URL + '/cow',
   [SupportedChainId.GNOSIS_CHAIN]: SUBGRAPH_BASE_URL + '/cow-gc',
   [SupportedChainId.GOERLI]: SUBGRAPH_BASE_URL + '/cow-goerli',
+  [SupportedChainId.LIGHTLINK_PHOENIX_MAINNET]: PHOENIX_SUBGRAPH_BASE_URL,
+  [SupportedChainId.LIGHTLINK_PEGASUS_TESTNET]: PEGASUS_SUBGRAPH_BASE_URL
+
 }
 
 /**
@@ -30,6 +35,8 @@ export const SUBGRAPH_STAGING_CONFIG: ApiBaseUrls = {
   [SupportedChainId.MAINNET]: SUBGRAPH_BASE_URL + '/cow-staging',
   [SupportedChainId.GNOSIS_CHAIN]: SUBGRAPH_BASE_URL + '/cow-gc-staging',
   [SupportedChainId.GOERLI]: '',
+  [SupportedChainId.LIGHTLINK_PHOENIX_MAINNET]: PHOENIX_SUBGRAPH_BASE_URL,
+  [SupportedChainId.LIGHTLINK_PEGASUS_TESTNET]: PEGASUS_SUBGRAPH_BASE_URL
 }
 
 /**

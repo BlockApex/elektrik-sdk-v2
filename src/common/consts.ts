@@ -14,6 +14,8 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
   SupportedChainId.MAINNET,
   SupportedChainId.GOERLI,
   SupportedChainId.GNOSIS_CHAIN,
+  SupportedChainId.LIGHTLINK_PEGASUS_TESTNET,
+  SupportedChainId.LIGHTLINK_PHOENIX_MAINNET,
 ]
 
 /**
